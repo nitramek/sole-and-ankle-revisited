@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import {BREAKPOINTS, WEIGHTS} from '../../constants';
+import {QUERIES, WEIGHTS} from '../../constants';
 
 import Breadcrumbs from '../Breadcrumbs';
 import Select from '../Select';
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   flex-direction: row-reverse;
   align-items: baseline;
   gap: 32px;
-  @media (${BREAKPOINTS.laptop}) {
+  @media (${QUERIES.laptop}) {
     flex-direction: column-reverse;
     gap: 8px;
   }
@@ -55,7 +55,7 @@ const Wrapper = styled.div`
 
 const LeftColumn = styled.div`
   flex-basis: 248px;
-  @media (${BREAKPOINTS.laptop}) {
+  @media (${QUERIES.laptop}) {
     flex-basis: 0;
     ${Spacer} {
       display: none;
@@ -77,7 +77,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  @media (${BREAKPOINTS.laptop}) {
+  @media (${QUERIES.laptop}) {
     & > * {
       display: none;
     }

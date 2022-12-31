@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import {BREAKPOINTS, COLORS, WEIGHTS} from '../../constants';
+import {QUERIES, COLORS, WEIGHTS} from '../../constants';
 
 const Sidebar = () => {
   return (
@@ -24,7 +24,7 @@ const Sidebar = () => {
 };
 
 const Wrapper = styled.aside`
-  @media (${BREAKPOINTS.laptop}) {
+  @media (${QUERIES.laptop}) {
     display: none;
   }
 `;

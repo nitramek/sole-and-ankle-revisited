@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import {BREAKPOINTS, COLORS, WEIGHTS} from '../../constants';
+import {QUERIES, COLORS, WEIGHTS} from '../../constants';
 import Logo from '../Logo';
 import SuperHeader from '../SuperHeader';
 import MobileMenu from '../MobileMenu';
@@ -54,7 +54,7 @@ const Header = () => {
 
 const MobileNav = styled.nav`
   display: none;
-  @media (${BREAKPOINTS.laptop}) {
+  @media (${QUERIES.laptop}) {
     display: flex;
     gap: 1rem;
   }
@@ -66,7 +66,7 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
-  @media (${BREAKPOINTS.laptop}){
+  @media (${QUERIES.laptop}){
     border-top: 4px solid ${COLORS.gray["900"]};
   }
 `;
@@ -75,7 +75,7 @@ const Nav = styled.nav`
   display: flex;
   gap: 48px;
   margin: 0px 48px;
-  @media (${BREAKPOINTS.laptop}){
+  @media (${QUERIES.laptop}){
     display: none;
   }
 `;
