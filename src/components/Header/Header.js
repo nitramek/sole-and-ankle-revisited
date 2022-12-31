@@ -39,7 +39,7 @@ const Header = () => {
           <UnstyledButton>
             <Icon id="search" strokeWidth={1}  size={"24px"} />
           </UnstyledButton>
-          <UnstyledButton>
+          <UnstyledButton onClick={() => setShowMobileMenu(true)}>
             <Icon id="menu" strokeWidth={1} size={"24px"}/>
           </UnstyledButton>
         </MobileNav>
@@ -68,6 +68,12 @@ const MainHeader = styled.div`
   border-bottom: 1px solid ${COLORS.gray[300]};
   @media (${QUERIES.laptop}){
     border-top: 4px solid ${COLORS.gray["900"]};
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media (${QUERIES.phone}) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 `;
 

@@ -49,7 +49,7 @@ const Wrapper = styled.div`
   gap: 32px;
   @media (${QUERIES.laptop}) {
     flex-direction: column-reverse;
-    gap: 8px;
+    gap: 0px;
   }
 `;
 
@@ -78,12 +78,14 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: baseline;
   @media (${QUERIES.laptop}) {
-    & > * {
-      display: none;
-    }
-
     ${Title} {
       display: revert;
+    }
+    align-items: flex-end;
+  }
+  @media (${QUERIES.phone}) {
+    & > * {
+      display: none;
     }
   }
 `;
